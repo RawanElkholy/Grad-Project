@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Board Games Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link" id="homeLink">Home</a>
+                    <a href="games.html" class="nav-link" id="gamesLink">Games</a>
+                    <a href="accessories.html" class="nav-link" id="accessoriesLink">Accessories</a>
+                    <a href="customization.html" class="nav-link" id="customizationLink">Customization</a>
+                    <a href="Events.html" class="nav-link" id="servicesLink">Events</a>
+                    <a href="Contact us.html" class="nav-link" id="servicesLink">Contact Us</a>
+                </div>
+            </div>
+            <div class="icon-group">
+                <a href="Favourite.html" class="icon-item" data-label="Wishlist">
+                    <img src="img/Heart.png" class="png-icon" />
+                </a>
+                <a href="cart.html" class="icon-item" data-label="Cart">
+                    <img src="img/shopping-bag.png" class="png-icon" />
+                </a>
+                <a href="account.html" class="icon-item" data-label="Account">
+                    <img src="img/user-account.png" class="png-icon" />
+                </a>
+            </div>
+
+        </nav>
+
+
+        </nav>
+        <section class="hero-section">
+            <div class="hero-text">
+                <h2>ONCE YOU PLAY, YOU CAN'T STOP!</h2>
+                <p>Endless fun in every game you try!</p>
+
+                <button onclick="location.href='games.html'">Explore Games➝</button>
+
+            </div>
+            <div class="hero-image">
+                <img src="img/ChatGPT Image May 15, 2025, 11_16_49 AM.png" alt="Games Image" class="zoom-img">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="feature">
+                <div class="icon">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <h4>Quick Delivery</h4>
+                <p>Swift delivery to your doorstep in just 10 rapid days!</p>
+            </div>
+            <div class="feature">
+                <div class="icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <h4>Secure Payment</h4>
+                <p>Shop confidently with our secure payment for worry-free transactions.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h4>Best Quality</h4>
+                <p>Unsurpassed excellence, delivering the epitome of premium quality products.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">
+                    <i class="fas fa-rotate-left"></i>
+                </div>
+                <h4>Return Guarantee</h4>
+                <p>10-day hassle-free returns. Your satisfaction is our commitment.</p>
+            </div>
+        </section>
+        <section class="cards-section">
+            <h2>Popular Cards</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/1-removebg-preview.png" alt="UNO GO" class="game-image">
+                    <h3>Skrew</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.2</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 130</div>
+                        <button class="add-to-cart" data-name="Skrew" data-price=" 130"
+                            data-image="img/1-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-10-08-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Uno go</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.9</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 75</div>
+                        <button class="add-to-cart" data-name="Uno-Go" data-price="75"
+                            data-image="img/photo_2025-05-05_11-10-08-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-10-07-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Playing cards</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.7</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 65</div>
+                        <button class="add-to-cart" data-name="Playing cards" data-price="65"
+                            data-image="img/photo_2025-05-05_11-10-07-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-12-37-removebg-preview (1).png" alt="UNO GO" class="game-image"
+                        data-url="UNO GO.html" style="cursor:pointer;" />
+                    <h3>Ludo</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.6</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 125</div>
+                        <button class="add-to-cart" data-name="Ludo" data-price="125"
+                            data-image="img/photo_2025-05-05_11-12-37-removebg-preview (1).png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-48-removebg-preview.png" alt="System" class="game-image"
+                        data-url="system.html" style="cursor:pointer;" />
+                    <h3>Lego</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.5</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 513</div>
+                        <button class="add-to-cart" data-name="Lego" data-price="513"
+                            data-image="img/photo_2025-05-19_18-58-48-removebg-preview.png">Add to Cart</button>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-52__2_-removebg-preview.png" alt="Puzzle(Roll mat)"
+                        class="game-image" data-url="system.html" style="cursor:pointer;" />
+                    <h3>Rick & Morty Puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.3</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 250</div>
+                        <button class="add-to-cart" data-name="( Rick & Morty Puzzle)" data-price="250"
+                            data-image="img/photo_2025-05-19_18-58-52__2_-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-44__2_-removebg-preview.png" alt="Puzzle(Roll mat)"
+                        class="game-image" />
+                    <h3>Crystal Dice</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.4</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 50</div>
+                        <button class="add-to-cart" data-name="Crystal Dice" data-price="50"
+                            data-image="img/photo_2025-05-19_18-58-44__2_-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-42-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Chess Set</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.3</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 100</div>
+                        <button class="add-to-cart" data-name="Chess Set" data-price=" 100"
+                            data-image="img/photo_2025-05-19_18-58-42-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cards-section">
+            <h2>Latest Cards</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-27-26-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Slam</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.9</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 325</div>
+                        <button class="add-to-cart" data-name="Slam" data-price=" 325"
+                            data-image="img/photo_2025-05-05_11-27-26-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-51-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Brick Heads</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.5</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 200</div>
+                        <button class="add-to-cart" data-name="Brick Heads" data-price=" 200"
+                            data-image="img/photo_2025-05-19_18-58-51-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-28-33-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Bloxels</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.9</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 560</div>
+                        <button class="add-to-cart" data-name="Bloxels" data-price=" 560"
+                            data-image="img/photo_2025-05-05_11-28-33-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-29-25-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>100 games</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.1</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 130</div>
+                        <button class="add-to-cart" data-name="Hat token" data-price=" 130"
+                            data-image="img/photo_2025-05-05_11-29-25-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-44-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Metal Dice Set</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>2.5</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 150</div>
+                        <button class="add-to-cart" data-name="Metal Dice Set" data-price=" 150"
+                            data-image="img/photo_2025-05-19_18-58-44-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/Img3-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Digital Timer</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>2.6</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 90</div>
+                        <button class="add-to-cart" data-name="Monopoly-mega edition" data-price=" 90"
+                            data-image="img/Img3-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-19_18-58-52-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3> Disney Puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.3</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 80</div>
+                        <button class="add-to-cart" data-name=" Disney Puzzle" data-price=" 80"
+                            data-image="img/photo_2025-05-19_18-58-52-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-05_11-31-25-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Villainous puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>2.9</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 800</div>
+                        <button class="add-to-cart" data-name="Villainous puzzle" data-price=" 800"
+                            data-image="img/photo_2025-05-05_11-31-25-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="advert">
+        <div class="game-box yellow">
+            <h3 class="advert9">Mystery Game Box</h3>
+            <p>Get a surprised game delivered every month</p>
+            <img class="game-img" src="img/unknown.png" alt="Card Game">
+            <div class="price9">
+                starting from LE 700
+            </div>
+            <button class="btn9">Explore Now</button>
+        </div>
+
+        <div class="game-box blue">
+            <div class="flip-badge">
+                <div class="badge-inner">
+                    <div class="badge-front">
+                        <div class="discount-badge">40% OFF</div>
+                    </div>
+                    <div class="badge-back">
+                        <div class="discount-badge">🔥 Hot Deal!</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="advert9">Best Seller</h3>
+            <p>New party card game!</p>
+            <img class="game-img" src="img/photo_2025-05-19_19-25-06-removebg-preview.png" alt="Card Game">
+            <div class="price9">
+                LE 600 <del class="del1"> LE 950</del>
+            </div>
+            <button class="btn9">Shop Now</button>
+        </div>
+
+    </div>
+    <div class="customer-reviews">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3-s">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Loved the variety of games! Found exactly what I was looking for.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="profile-s">
+                        <img src="img/photo_2025-05-19_19-44-41.jpg" alt="aaa">
+                    </div>
+                    <h3>Basmala Adel</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I like how easy it is to browse and find what I want. 10/10
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="img/WhatsApp Image 2025-05-19 at 23.58.21_19227bc7.jpg" alt="aaa">
+                    </div>
+                    <h3>Alaa Mohamed</h3>
+                </div>
+
+                <div class="col-3 middle">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Excellent game quality and smooth performance. Feels like a premium experience
+                        .</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="img/photo_2025-05-19_19-46-10.jpg" alt="aaa">
+                    </div>
+                    <h3>Hager Elbanna</h3>
+                </div>
+
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>High-quality accessories and smooth checkout process. Super satisfied</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="img/photo_2025-05-19_19-46-09.jpg" alt="aaa">
+                    </div>
+                    <h3>Nour Emara</h3>
+                </div>
+
+                <div class="col-3-s">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Fast delivery and great customer service. I’ll definitely be back!”.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="profile-s">
+                        <img src="img/WhatsApp Image 2025-05-19 at 20.17.49_f48ac380.jpg" alt="aaa">
+                    </div>
+                    <h3>Alaa Elkholy</h3>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <div class="logo-footer">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Gamix Logo">
+                </div>
+                <div class="social">
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Returns & Guarantee</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#"><strong>FAQ</strong></a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Promotions</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            ©2025 GamiX All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        function toggleFavorite(favoriteElement) {
+            let card = favoriteElement.closest('.card');
+            let gameName = card.querySelector('h3').textContent;
+            let gameImage = "img/" + card.querySelector('.game-image').src.split('/').pop();
+            let gamePrice = card.querySelector('.price').textContent;
+            let gameQuantity = 1;
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            let index = favorites.findIndex(game => game.name === gameName);
+            if (index === -1) {
+                favorites.push({
+                    name: gameName,
+                    image: gameImage,
+                    price: gamePrice,
+                    quantity: gameQuantity
+                });
+                favoriteElement.querySelector('i').classList.remove('far');
+                favoriteElement.querySelector('i').classList.add('fas');
+            } else {
+
+                favorites.splice(index, 1);
+                favoriteElement.querySelector('i').classList.remove('fas');
+                favoriteElement.querySelector('i').classList.add('far');
+            }
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+
+        window.onload = function () {
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let favoriteIcons = document.querySelectorAll('.favorite');
+
+            favoriteIcons.forEach(favorite => {
+                let card = favorite.closest('.card');
+                let gameName = card.querySelector('h3').textContent;
+
+                if (favorites.some(game => game.name === gameName)) {
+                    favorite.querySelector('i').classList.remove('far');
+                    favorite.querySelector('i').classList.add('fas');
+                }
+            });
+        }
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", () => {
+                const name = button.getAttribute("data-name");
+                const price = parseFloat(button.getAttribute("data-price"));
+                let image = button.getAttribute("data-image");
+
+                // لو مفيش مسار، نضيف img/
+                if (!image.startsWith("img/") && !image.includes("/") && !image.startsWith("http")) {
+                    image = "img/" + image;
+                }
+
+                const existing = cart.find(item => item.name === name);
+                if (existing) {
+                    existing.quantity += 1;
+                } else {
+                    cart.push({ name, price, image, quantity: 1 });
+                }
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${name} added to cart!`);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const gameImages = document.querySelectorAll(".game-image");
+
+            gameImages.forEach(function (img) {
+                img.addEventListener("click", function () {
+                    const url = img.getAttribute("data-url");
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+
+
+        const cards = document.querySelectorAll('.card');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+
+
+    </script>
+
+    <script src="account.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+
+</html>

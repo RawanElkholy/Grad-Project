@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="puzzle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Board Games Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link" id="homeLink">Home</a>
+                    <a href="games.html" class="nav-link" id="gamesLink">Games</a>
+                    <a href="accessories.html" class="nav-link" id="accessoriesLink">Accessories</a>
+                    <a href="customization.html" class="nav-link" id="customizationLink">Customization</a>
+                    <a href="Events.html" class="nav-link" id="servicesLink">Events</a>
+                    <a href="Contact us.html" class="nav-link" id="servicesLink">Contact Us</a>
+                </div>
+            </div>
+            <div class="icon-group">
+                <a href="Favourite.html" class="icon-item" data-label="Wishlist">
+                    <img src="img/Heart.png" class="png-icon" />
+                </a>
+                <a href="cart.html" class="icon-item" data-label="Cart">
+                    <img src="img/shopping-bag.png" class="png-icon" />
+                </a>
+                <a href="account.html" class="icon-item" data-label="Account">
+                    <img src="img/user-account.png" class="png-icon" />
+                </a>
+            </div>
+    </div>
+    </nav>
+    </nav>
+    </nav>
+    <div class="container1">
+        <div class="upload-section">
+            <img src="img2/photo_2025-05-18_15-40-48-removebg-preview.png" alt="Upload Preview" class="upload-image">
+        </div>
+
+
+
+        <div class="options-section">
+            <div class="box quantity-box">
+                <div class="quantity-row">
+                    <h3>Quantity</h3>
+                    <input type="number" min="1" value="1" id="quantity" class="quantity-input">
+                    <div class="price" id="total-price">Total<br> 44.95</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="tabs">
+                    <button onclick="showTab('options')">Puzzle Options</button>
+                    <button onclick="showTab('sides')">Puzzle Sides</button>
+                </div>
+                <div id="options" class="tab-content">
+                    <h4>Puzzle Size & Pieces</h4>
+                    <div class="puzzle-options">
+                        <div class="option-card" onclick="selectSize(this, 44.95)">High definition</div>
+                        <div class="option-card" onclick="selectSize(this, 34.95)">Premium</div>
+                        <div class="option-card" onclick="selectSize(this, 24.95)">Traditional</div>
+                    </div>
+                    <div class="option-columns">
+                        <div class="option-column">
+                            <label for="material">Material</label>
+                            <select id="material">
+                                <option>Cardboard</option>
+                                <option>Wooden</option>
+                                <option>Acrylic</option>
+                                <option>Plastic</option>
+                                <option>Magnetic</option>
+                            </select>
+                            <label for="backing">Backing</label>
+                            <select id="backing">
+                                <option>Poly Bag (No box)</option>
+                                <option>Plain Box</option>
+                                <option>Image Box (+5 EGP)</option>
+                                <option>Custom Box (+8 EGP)</option>
+                            </select>
+                            <label for="frame">Frame</label>
+                            <select id="frame">
+                                <option>None</option>
+                                <option>White (+15 EGP)</option>
+                            </select>
+                        </div>
+                        <div class="option-column">
+                            <label for="finish">Finish</label>
+                            <select id="finish">
+                                <option>Gloss Standard</option>
+                                <option>Matte Standard</option>
+                                <option>Gloss Linen</option>
+                                <option>Matte Linen</option>
+                            </select>
+                            <label for="print-side">Print Side</label>
+                            <select id="print-side">
+                                <option>Front</option>
+                                <option>Behind</option>
+                                <option>Both Sides (+10 EGP)</option>
+                            </select>
+                            <label for="print-effect">Print Effect</label>
+                            <select id="print-effect">
+                                <option>Full Color</option>
+                                <option>Black & White</option>
+                                <option>Sepia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="sides" class="tab-content" style="display:none;">
+                    <h4>Puzzle Side Shapes</h4>
+                    <div class="puzzle-side-shapes">
+                        <div class="puzzle-side-shapes">
+                            <div class="option-card" onclick="selectOption(this)">29.5*38.5 <br />1008 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">29.5*38.5 <br />2000 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">20*30 <br />24 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">20*30 <br />100 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">20*30 <br />500 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">20*30 <br />1000 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">19.25*28 <br />1000 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">18*24 <br />70 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">18*24 <br />500 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">18*24 <br />320 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">12*16.5 <br />24 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">12*16.5 <br />54 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">12*16.5 <br />285 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">12*16.5 <br />1000 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">8*10 <br />12 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">8*10 <br />30 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">8*10 <br />100 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">3.5*5 <br />24 Psc</div>
+                            <div class="option-card" onclick="selectOption(this)">3.1*3.9 <br />154 Psc</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-row">
+                <button class="btn-video">Watch Video</button>
+                <button class="btn-blue">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <a href="customization.html" class="back-button-puzzle">⬅ BACK</a>
+    <script src="script.js"></script>
+    <script>
+        let basePrice = 44.95;
+
+        function showTab(tab) {
+            document.getElementById('options').style.display = tab === 'options' ? 'block' : 'none';
+            document.getElementById('sides').style.display = tab === 'sides' ? 'block' : 'none';
+        }
+
+        function selectOption(el) {
+            document.querySelectorAll('.option-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            el.classList.add('active');
+        }
+
+        function selectSize(el, price) {
+            selectOption(el);
+            basePrice = price;
+            updatePrice();
+        }
+
+        function updatePrice() {
+            const qty = parseInt(document.getElementById('quantity').value) || 1;
+            const total = (qty * basePrice).toFixed(2);
+            document.getElementById('total-price').innerText = `Total ${total}`; I
+        }
+
+        document.getElementById('quantity').addEventListener('input', updatePrice);
+    </script>
+</body>
+
+</html>

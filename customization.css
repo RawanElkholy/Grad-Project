@@ -1,0 +1,349 @@
+.hero22 {
+    padding: 10px;
+    text-align: center;
+    background: #d3d3d3;
+    max-width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+    animation: gradientMove 10s ease infinite;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content22 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.hero-text22 {
+    text-align: left;
+    max-width: 50%;
+}
+
+.hero-image22 img {
+    width: 450px;
+    height: 450;
+    border-radius: 10px;
+    animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-15px) scale(1.05);
+        opacity: 0.95;
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* نفس تنسيقات العناوين والنصوص */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: rgb(35, 34, 34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #232425;
+    margin-top: 60px;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animate-title22 {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlideIn 1.5s forwards;
+}
+
+.animate-subtitle22 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 2s forwards;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40x;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 35px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    animation: pulseGlow 2.5s infinite;
+    transition: 0.3s;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        background-position: 0% center;
+    }
+
+    50% {
+        transform: scale(1.05);
+        background-position: 100% center;
+    }
+}
+
+.category-btn:hover {
+    background-color: #ffffff;
+}
+
+.category-btn.active {
+    background: transparent;
+
+    color: white;
+}
+
+.next-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    animation: slideInRight 0.8s ease;
+}
+
+.next-btn:hover {
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.prev-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    animation: slideInLeft 0.8s ease;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.arrow-container-nxt {
+    position: relative;
+    height: 100px;
+}
+
+.arrow-container-prev {
+    position: relative;
+    height: 100px;
+}
+
+.arrow-icon-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    stroke: #181717;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    stroke: #141313;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.collection-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.accent {
+    color: #fff;
+}
+
+.section2 {
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transform: translateX(40px);
+    gap: 20px;
+}
+
+.card5 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    min-width: 0;
+    margin-bottom: 50px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card5:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cardimg1 {
+    width: 80%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.card5-content {
+    padding: 15px;
+}
+
+.cards-title1 {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+.card5-price {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #a78bfa;
+}
+
+.add-btn {
+    width: 60%;
+    padding: 3px;
+    background: #E7180D;
+    border: none;
+    border-radius: 12px;
+    color: rgb(240, 229, 229);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 7px auto 0 auto;
+    text-align: center;
+}
+
+.add-btn:hover {
+    opacity: 0.9;
+}
+
+.categoriesall {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.category-all {
+    cursor: pointer;
+    transition: color 0.3s;
+    border: 2px solid #333;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+
+.category:hover {
+    color: #007bff;
+}
+
+.category.active {
+    font-weight: bold;
+    text-decoration: underline;
+}

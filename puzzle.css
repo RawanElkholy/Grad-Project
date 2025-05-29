@@ -1,0 +1,225 @@
+.container1 {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.upload-section {
+    flex: 2;
+    border-radius: 8px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    overflow: hidden;
+    padding: 0;
+    background: none;
+}
+
+.upload-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.options-section {
+    flex: 1.5;
+}
+
+.box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    color: #0a0a0a;
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    background: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background: #ddd;
+}
+
+.tab-content {
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.puzzle-options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option-card {
+    flex: 1;
+    padding: 15px;
+    background: #eee;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    border: 2px solid transparent;
+}
+
+.option-card:hover {
+    background: #ddd;
+}
+
+.option-card.active {
+    background: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.option-columns {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.option-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-column label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.option-column select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.puzzle-side-shapes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 130px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-blue,
+.btn-video {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-blue {
+    background: #E7180D;
+    color: white;
+    border-radius: 13px;
+}
+
+.btn-video {
+    background: #333;
+    color: white;
+    border-radius: 15px;
+}
+
+.back-button-puzzle {
+    width: 100px;
+    display: block;
+    margin-left: 500px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #101110;
+    background-color: transparent;
+    border: 2px solid #101110;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.back-button-puzzle:hover {
+    background-color: #101110;
+    color: white;
+}
+
+/* ✅ Media Query للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .upload-section {
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        margin-left: 0;
+    }
+
+    .back-button-puzzle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

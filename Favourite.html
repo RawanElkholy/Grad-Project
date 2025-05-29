@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favourite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Board Games Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link" id="homeLink">Home</a>
+                    <a href="games.html" class="nav-link" id="gamesLink">Games</a>
+                    <a href="accessories.html" class="nav-link" id="accessoriesLink">Accessories</a>
+                    <a href="customization.html" class="nav-link" id="customizationLink">Customization</a>
+                    <a href="Events.html" class="nav-link" id="servicesLink">Events</a>
+                    <a href="Contact us.html" class="nav-link" id="servicesLink">Contact Us</a>
+                </div>
+            </div>
+            <div class="icon-group">
+                <a href="Favourite.html" class="icon-item" data-label="Wishlist">
+                    <img src="img/Heart.png" class="png-icon" />
+                </a>
+                <a href="cart.html" class="icon-item" data-label="Cart">
+                    <img src="img/shopping-bag.png" class="png-icon" />
+                </a>
+                <a href="account.html" class="icon-item" data-label="Account">
+                    <img src="img/user-account.png" class="png-icon" />
+                </a>
+            </div>
+    </div>
+    </nav>
+    <div class="container-wishlist">
+        <h1> Wishlist</h1>
+        <div id="favoritesContainer" class="favorites-grid">
+            <div class="menu1">
+                <div class="product7">Products</div>
+                <div class="quantity7">Quantity</div>
+                <div class="price7">Price</div>
+                <div class="remove7"></div>
+                <div class="addtocart7"></div>
+            </div>
+        </div>
+        <div class="favorite-list"></div>
+        <div id="favorites-container" class="wishlist-container"></div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="logo-footer">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Gamix Logo">
+                </div>
+                <div class="social">
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Returns & Guarantee</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#"><strong>FAQ</strong></a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Promotions</h3>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            ©2025 GamiX All rights reserved
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let container = document.getElementById('favorites-container');
+            favorites.forEach((game, index) => {
+                let gameRow = document.createElement('div');
+                gameRow.classList.add('wishlist-item');
+                let removeButton = document.createElement('button');
+                removeButton.classList.add('remove-item');
+                removeButton.textContent = 'X';
+                removeButton.onclick = function () {
+                    removeFromFavorites(index);
+                };
+                let addToCartButton = document.createElement('button');
+                addToCartButton.classList.add('add-to-cart');
+                addToCartButton.textContent = 'Add to cart';
+                addToCartButton.onclick = function () {
+                    addToCart(game);
+                };
+                let imagePath = game.image;
+                gameRow.innerHTML = `
+    <div class="product-info">
+        <img src="${imagePath}" alt="${game.name}">
+        <span class="product-name">${game.name}</span>
+    </div>
+    <div class="product-quantity">${game.quantity || 1}</div>
+    <div class="product-price">${game.price} </div>
+`;
+                gameRow.appendChild(removeButton);
+                gameRow.appendChild(addToCartButton);
+                container.appendChild(gameRow);
+            });
+
+            function removeFromFavorites(index) {
+                favorites.splice(index, 1);
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+                window.location.reload();
+            }
+            function addToCart(product) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                let rawPrice = typeof product.price === 'string' ? product.price.replace(/[^\d.]/g, '') : product.price;
+                let price = parseFloat(rawPrice);
+
+                if (isNaN(price)) {
+                    alert("⚠️ السعر غير صالح، لا يمكن إضافة المنتج إلى السلة.");
+                    return;
+                }
+                const cartItem = {
+                    name: product.name,
+                    image: product.image,
+                    price: price,
+                    quantity: 1
+                };
+                cart.push(cartItem);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product.name} added to cart!`);
+            }
+        }
+    </script>
+    <script src="favorites.js"></script>
+</body>
+
+</html>

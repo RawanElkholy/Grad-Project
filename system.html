@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="img/IMG_4194-removebg-preview.png" alt="Board Games Logo">
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link" id="homeLink">Home</a>
+                    <a href="games.html" class="nav-link" id="gamesLink">Games</a>
+                    <a href="accessories.html" class="nav-link" id="accessoriesLink">Accessories</a>
+                    <a href="customization.html" class="nav-link" id="customizationLink">Customization</a>
+                    <a href="Events.html" class="nav-link" id="servicesLink">Events</a>
+                    <a href="Contact us.html" class="nav-link" id="servicesLink">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="icon-group">
+                <a href="Favourite.html" class="icon-item" data-label="Wishlist">
+                    <img src="img/Heart.png" class="png-icon" />
+                </a>
+                <a href="cart.html" class="icon-item" data-label="Cart">
+                    <img src="img/shopping-bag.png" class="png-icon" />
+                </a>
+                <a href="account.html" class="icon-item" data-label="Account">
+                    <img src="img/user-account.png" class="png-icon" />
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="Details7">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/photo_2025-05-19_18-58-52__2_-removebg-preview.png" width="100%" id="ProductImg">
+
+                </div>
+                <div class="col-2">
+                    <p>Games / Details</p>
+                    <h1>Rick & Morty Puzzle</h1>
+                    <h4>LE 250</h4>
+                    Quantity
+                    <input type="number" value="1" class="quantity">
+                    <a href="" class="button">Add to Cart</a>
+
+                    <h3>Game Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p class="g-1">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="cards-section12">
+            <h2>Related Products</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-20_19-48-00__2_-removebg-preview.png" alt="UNO GO" class="game-image"
+                        data-url="UNO GO.html" style="cursor:pointer;" />
+                    <h3>Revenseburger Puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>4.1</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 200</div>
+                        <button class="add-to-cart" data-name="Revenseburger Puzzle" data-price="200"
+                            data-image="img/photo_2025-05-20_19-48-00__2_-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-20_19-47-59-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Revenseburger Puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.9</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 220</div>
+                        <button class="add-to-cart" data-name="Revenseburger Puzzle" data-price="220"
+                            data-image="img/photo_2025-05-20_19-47-59-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/photo_2025-05-20_19-48-00-removebg-preview.png" alt="UNO GO" class="game-image" />
+                    <h3>Revenseburger Puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.5</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 300</div>
+                        <button class="add-to-cart" data-name="Revenseburger Puzzle" data-price="300"
+                            data-image="img/photo_2025-05-20_19-48-00-removebg-preview.png">Add to Cart</button>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="favorite" onclick="toggleFavorite(this)">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <img src="img/WINNING-MOVES-1000-EL-RICK-AND-MORTY-PUZZLE-removebg-preview.png" alt="UNO GO"
+                        class="game-image" />
+                    <h3>Rick & Morty puzzle</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><span>3.6</span>
+                    </div>
+                    <div class="con">
+                        <div class="price">LE 320</div>
+                        <button class="add-to-cart" data-name="Rick & Morty puzzle" data-price="320"
+                            data-image="img/WINNING-MOVES-1000-EL-RICK-AND-MORTY-PUZZLE-removebg-preview.png">Add to
+                            Cart</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <a href="Games.html" class="back-button">⬅ BACK</a>
+
+    </div>
+    </div>
+    </div>
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", () => {
+                const name = button.getAttribute("data-name");
+                const price = parseFloat(button.getAttribute("data-price"));
+                let image = button.getAttribute("data-image");
+                if (!image.startsWith("img/") && !image.includes("/") && !image.startsWith("http")) {
+                    image = "img/" + image;
+                }
+                const existing = cart.find(item => item.name === name);
+                if (existing) {
+                    existing.quantity += 1;
+                } else {
+                    cart.push({ name, price, image, quantity: 1 });
+                }
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${name} added to cart!`);
+            });
+        });
+        function toggleFavorite(favoriteElement) {
+            let card = favoriteElement.closest('.card');
+            let gameName = card.querySelector('h3').textContent;
+            let gameImage = "img/" + card.querySelector('.game-image').src.split('/').pop();
+            let gamePrice = card.querySelector('.price').textContent;
+            let gameQuantity = 1;
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let index = favorites.findIndex(game => game.name === gameName);
+            if (index === -1) {
+                favorites.push({
+                    name: gameName,
+                    image: gameImage,
+                    price: gamePrice,
+                    quantity: gameQuantity
+                });
+                favoriteElement.querySelector('i').classList.remove('far');
+                favoriteElement.querySelector('i').classList.add('fas');
+            } else {
+                favorites.splice(index, 1);
+                favoriteElement.querySelector('i').classList.remove('fas');
+                favoriteElement.querySelector('i').classList.add('far');
+            }
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        window.onload = function () {
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let favoriteIcons = document.querySelectorAll('.favorite');
+
+            favoriteIcons.forEach(favorite => {
+                let card = favorite.closest('.card');
+                let gameName = card.querySelector('h3').textContent
+                if (favorites.some(game => game.name === gameName)) {
+                    favorite.querySelector('i').classList.remove('far');
+                    favorite.querySelector('i').classList.add('fas');
+                }
+            });
+        }
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+
+    </script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
